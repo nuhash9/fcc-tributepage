@@ -1,0 +1,187 @@
+body {
+  margin: 0 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.heading-text h1 {
+  font-family: 'Slabo 27px', sans-serif;
+}
+
+.container {
+  background-color: white;
+  /*margin: 0px 10% 0px 10%;*/
+}
+
+.heading {
+  background-color: #2F2B2B;
+  background-image: url(http://s32.postimg.org/d19swit6t/Enigma_Promo_3_blur.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 20px 10% 50px 10%;
+}
+
+.heading .subtext {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.img {
+  background-image: url(https://40.media.tumblr.com/fe26f32f795d3ab0bc37f355693bd1ed/tumblr_nho2oeb4ku1qjf41uo1_400.jpg);
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  margin: 0px auto;
+  transition: 1s ease-out;
+}
+
+.round {
+  border-style: hidden;
+  border-radius: 50%;
+}
+
+
+.timeline {
+  text-align: center;
+  position: relative;
+}
+
+.timeline:before {
+  content: " ";
+  width: 1px;
+  background: 1px #ccc;
+  height: 100%;
+  position: absolute;
+  left: calc(10% + 50px);
+  z-index: 1;
+}
+
+.timeline ul {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline ul li {
+  position: relative;
+  z-index: 2;
+}
+
+.timeline ul li .year {
+  display: block;
+  font-size: 30px;
+  color: #0BAE0B;
+  background-color: white;
+  height: 40px;
+  width: 100px;
+  margin: 0 0 0 10%;
+  box-shadow: 0px 0px 5px 0px #ccc;
+  border: 1px solid #0BAE0B;
+  border-radius: 20px;
+}
+
+.timeline ul li .timeline-text {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  margin: 20px auto;
+  width: 60%;
+  padding: 15px 10px;
+}
+
+
+.timeline ul li strong {
+  font-size: 18px;
+}
+
+
+.quote-link {
+  background-color: #519D9E;
+  color: white;
+  padding: 40px 10% 30px 10%;
+}
+
+.quote-link h2 {
+  text-align: right;
+  font-family: 'Muli', sans-serif;
+  padding-right: 10px;
+}
+
+.quote-link p {
+  padding-right: 0;
+  text-align: right;
+}
+
+.quote-link p a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.7);
+}
+
+.quote-link p a:hover {
+  color: white;
+}
+
+.separator {
+  width: 90%;
+  height: 1px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+footer {
+  width: 100%;
+  background-color: #2F2B2B;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0 0;
+  font-size: 13px;
+}
+
+footer .bold-link {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: bold;
+}
+
+footer .credit {
+  font-size: 15px;
+}
+
+footer a:hover {
+  color: white;
+}
+
+@media screen and (max-width: 719px) {
+  .timeline:before {
+    left: calc(2% + 26px);
+    //display: none;
+  }
+  
+  .timeline ul li .year {
+    font-size: 18px;
+    height: 26px;
+    width: 52px;
+    margin-left: 2%;
+  }
+  
+  .timeline ul li .timeline-text {
+    width: 70%;
+    background: none;
+    padding-left: 30px;
+    font-size: 13px;
+  }
+  .img {
+    height: 200px;
+    width: 200px;
+  }
+  footer p {
+    width: 98%;
+  }
+}
